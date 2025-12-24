@@ -4,12 +4,156 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Responsive Navbar</title>
+    <script
+      src="https://kit.fontawesome.com/4652097599.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main-menu">
-        <img src="" alt="">
+    <div class="navigation-container">
+      <img
+        id="mayo-logo"
+        width="48px"
+        height="48px"
+        src="images/mayo-clinic-logo.svg"
+        alt="mayo-clinic-logo"
+      />
+      <ul class="navigation">
+        <div class="arrow-wrapper-1">
+          <button class="arrow-buttons" id="arrowBtn-1">
+            <li>Care at Mayo Clinic</li>
+          </button>
+          <div class="arrow-content arrow-content-1">
+            <p id="content-1">Parent-Centered Care</p>
+            <p id="content-2">About Mayo Clinic</p>
+            <p id="content-3">Request Appointment</p>
+            <p id="content-4">Find a doctor</p>
+            <p id="content-5">Location</p>
+            <p id="content-6">Clinical Trials</p>
+          </div>
+        </div>
+
+        <div class="arrow-wrapper-2">
+          <button class="arrow-buttons" id="arrowBtn-2">
+            <li>Health Library</li>
+          </button>
+          <div class="arrow-content arrow-content-2">
+            <p id="content-1">Disease & Conditions</p>
+            <p id="content-2">Symptoms</p>
+            <p id="content-3">Test & Procedures</p>
+            <p id="content-4">Drugs & Supplements</p>
+            <p id="content-5">Healthy Lifestyle</p>
+            <p id="content-6">Mayo Clinic Health Letter & Books</p>
+          </div>
+        </div>
+        <div class="arrow-wrapper-3">
+          <button class="arrow-buttons" id="arrowBtn-3">
+            <li>For medical professionals</li>
+          </button>
+          <div class="arrow-content arrow-content-3">
+            <p id="content-1">Medical Professional Resources</p>
+            <p id="content-2">Refer a Patient</p>
+            <p id="content-3">Continuing Medical Education</p>
+            <p id="content-4">Mayo Clinic Laboratories</p>
+            <p id="content-5">Video Center</p>
+            <p id="content-6">Journals & Publications</p>
+            <p id="content-6">Mayo Clinic Association</p>
+          </div>
+        </div>
+        <div class="arrow-wrapper-4">
+          <button class="arrow-buttons" id="arrowBtn-4">
+            <li>Research & Education at Mayo clinic</li>
+          </button>
+          <div class="arrow-content arrow-content-4">
+            <p id="content-1">Research at Mayo Clinic</p>
+            <p id="content-2">Research Faculty</p>
+            <p id="content-3">Laboratories</p>
+            <p id="content-4">Core Facilities</p>
+            <p id="content-5">Centers & Programs</p>
+            <p id="content-6">Departments & Divisions</p>
+          </div>
+        </div>
+        <div class="arrow-wrapper-5">
+          <button class="arrow-buttons" id="arrowBtn-5">
+            <li>Giving to Mayo clinic</li>
+          </button>
+          <div class="arrow-content arrow-content-5">
+            <p id="content-1">Give now</p>
+            <p id="content-2">Giving to Mayo Clinic</p>
+            <p id="content-3">Frequently Asked Questions</p>
+            <p id="content-4">Contact s to Give</p>
+          </div>
+        </div>
+      </ul>
+
+      <div class="button-logos">
+        <button id="requestButton">Request appointment</button>
+        <button id="loginButton">
+          <i class="fa-regular fa-user fa-x"></i>Log in
+        </button>
+        <i class="fa-solid fa-magnifying-glass fa-x"></i>
+        <button id="menuButton"><i class="fa-solid fa-bars fa-x"></i></button>
+      </div>
     </div>
+
+    <div class="hero-container">
+      <video
+        class="video-container"
+        muted
+        autoplay
+        loop
+        src="images/medical-video.mp4"
+        type="video/mp4"
+      ></video>
+      <button id="playButton">
+        <i class="fa-regular fa-circle-play fa-3x"></i>
+      </button>
+      <div class="hero-content">
+        <div class="title-container">
+          <h1 style="font-size: 2.5em">Transforming your care</h1>
+          <br />
+          <p style="font-size: 1em">
+            Learn how we drive innovation
+            <i class="fa-solid fa-chevron-right"></i>
+          </p>
+          <br />
+          <button id="appointmentButton">Request appointment</button>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="middle-container">
+        <div class="details-container">
+          <div class="detail-packer">
+            <div class="with-arrow">
+              <p>Treatment</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <br />
+            <p>Dental care</p>
+          </div>
+
+          <div class="detail-packer">
+            <div class="with-arrow">
+              <p>Location</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <br />
+            <p>Kanpur, U.P.</p>
+          </div>
+
+          <div class="detail-packer">
+            <div class="with-arrow">
+              <p>Clinic name</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <br />
+            <p>Shiva clinic center</p>
+          </div>
+          <button id="searchButton">Search Now</button>
+        </div>
+      </div> -->
+
     <script src="script.js"></script>
   </body>
 </html>

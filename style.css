@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fffdf6;
+}
+.navigation-container {
+  background-color: #ecf7ff;
+  width: 100%;
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+}
+.navigation {
+  display: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.button-logos {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+#requestButton {
+  display: none;
+}
+#loginButton {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  font-size: 1em;
+}
+#menuButton {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  font-size: 1em;
+}
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 566px;
+}
+.hero-content {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 409px;
+  height: 236px;
+  padding: 0 24px 24px 8px;
+  color: white;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+  padding: 0 0 56px 12px;
+}
+
+#appointmentButton {
+  width: 350px;
+  padding: 8px 24px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 566px;
+  object-fit: cover;
+  z-index: -1;
+}
+#playButton {
+  position: absolute;
+  margin: 10px 10px auto auto;
+  right: 0;
+  top: 0;
+  color: white;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.details-container {
+  display: none;
+  width: 879px;
+  height: 90px;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-left: 17px;
+  gap: 56px;
+  align-items: center;
+}
+/* .middle-position {
+  position: relative;
+}
+.middle-container {
+  display: flex;
+  position: absolute;
+} */
+
+/* Pad */
+@media screen and (min-width: 37em) {
+  .navigation-container {
+    width: 100%;
+  }
+  .navigation {
+    display: none;
+  }
+  #requestButton {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
+  }
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 432px;
+  }
+  .title-container {
+    display: flex;
+    font-size: 1em;
+    width: 100%;
+  }
+  #appointmentButton {
+    font-size: 1em;
+  }
+  .video-container {
+    width: 100%;
+    height: 432px;
+  }
+}
+/* Website */
+@media screen and (min-width: 90em) {
+  .navigation-container {
+    width: 100%;
+  }
+  .navigation {
+    max-width: fit-content;
+    display: flex;
+    gap: 23px;
+    font-size: 3em;
+    width: 600px;
+  }
+  .arrow-wrapper-1 {
+    position: relative;
+    display: inline-block;
+  }
+  .arrow-buttons {
+    border: none;
+    background-color: transparent;
+    text-align: start;
+  }
+  .arrow-content {
+    display: none;
+    position: absolute;
+    background-color: #ecf7ff;
+    width: 600px;
+    padding: 30px;
+    margin: 30px auto;
+    box-shadow: 0px 8px 16px 0px rgba(113, 128, 194, 0.588);
+    z-index: 1;
+  }
+  .arrow-wrapper-1:hover .arrow-content-1 {
+    display: block;
+    font-size: 1.1rem;
+  }
+
+  .arrow-wrapper-1:hover #arrowBtn-1 {
+    color: rgb(0, 140, 186);
+  }
+
+  .arrow-wrapper-2 {
+    position: relative;
+    display: inline-block;
+  }
+  .arrow-wrapper-2:hover .arrow-content {
+    display: block;
+    font-size: 1.1rem;
+  }
+  .arrow-wrapper-2:hover #arrowBtn-2 {
+    color: rgb(0, 140, 186);
+  }
+
+  .arrow-wrapper-3 {
+    position: relative;
+    display: inline-block;
+  }
+  .arrow-wrapper-3:hover .arrow-content {
+    display: block;
+    font-size: 1.1rem;
+  }
+  .arrow-wrapper-3:hover #arrowBtn-3 {
+    color: rgb(0, 140, 186);
+  }
+  .arrow-wrapper-4 {
+    position: relative;
+    display: inline-block;
+  }
+  .arrow-wrapper-4:hover .arrow-content {
+    display: block;
+    font-size: 1.1rem;
+  }
+  .arrow-wrapper-4:hover #arrowBtn-4 {
+    color: rgb(0, 140, 186);
+  }
+
+  .arrow-wrapper-5 {
+    position: relative;
+    display: inline-block;
+  }
+  .arrow-wrapper-5:hover .arrow-content {
+    display: block;
+    font-size: 1.1rem;
+  }
+  .arrow-wrapper-5:hover #arrowBtn-5 {
+    color: rgb(0, 140, 186);
+  }
+  #menuButton {
+    display: none;
+  }
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 610px;
+  }
+  .hero-content {
+    width: 100%;
+    display: flex;
+  }
+  .title-container {
+    width: 100%;
+    font-size: 1.4em;
+  }
+  .video-container {
+    width: 100%;
+    height: 610px;
+  }
+  #appointmentButton {
+    font-size: 1em;
+  }
+}
