@@ -16,6 +16,7 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   align-items: center;
+  border-bottom: 1px solid #6e6e6e85;
 }
 .navigation {
   display: none;
@@ -39,11 +40,69 @@ ul {
   background-color: transparent;
   font-size: 1em;
 }
-#menuButton {
+.menu-buttons {
   display: flex;
   border: none;
   background-color: transparent;
   font-size: 1em;
+}
+#menuButton {
+  display: flex;
+}
+#menuButton .line {
+  display: block;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  margin-bottom: 10px;
+  background-color: rgb(176, 175, 175);
+  cursor: pointer;
+}
+.menu-wrapper {
+  z-index: 2;
+}
+
+.menu-hidden {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  top: 5.5rem;
+  left: 0px;
+  background-color: #ecf7ff;
+  font-size: 1em;
+}
+.menu-hidden .a {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+}
+.menu-hidden a:hover {
+  background-color: rgb(223, 251, 219);
+}
+.hidden {
+  display: none;
+}
+.slide-content {
+  display: none;
+}
+.slide-header {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  text-align: left;
+  padding: 20px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #6e6e6e85;
+}
+.icon {
+  transition: transform 0.3s ease;
+}
+.menu-slide.active .icon {
+  transform: rotate(180deg);
 }
 .hero-container {
   position: relative;
@@ -241,6 +300,7 @@ ul {
   #menuButton {
     display: none;
   }
+
   .hero-container {
     position: relative;
     width: 100%;
