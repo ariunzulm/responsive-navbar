@@ -82,16 +82,23 @@ ul {
   object-fit: cover;
   z-index: -1;
 }
-#playButton {
+.video-buttons {
   position: absolute;
-  margin: 10px 10px auto auto;
+  margin: 20px 20px auto auto;
   right: 0;
   top: 0;
   color: white;
   border: none;
-  background-color: transparent;
   cursor: pointer;
+  display: flex;
+  width: 58px;
+  height: 58px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.56);
 }
+
 .details-container {
   display: none;
   width: 879px;
@@ -144,7 +151,7 @@ ul {
   }
 }
 /* Website */
-@media screen and (min-width: 90em) {
+@media screen and (min-width: 80em) {
   .navigation-container {
     width: 100%;
   }
@@ -160,6 +167,8 @@ ul {
     display: inline-block;
   }
   .arrow-buttons {
+    display: flex;
+    gap: 2px;
     border: none;
     background-color: transparent;
     text-align: start;
