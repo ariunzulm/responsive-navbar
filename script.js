@@ -8,7 +8,6 @@ const closeButton$ = document.getElementById("closeButton");
 const answers$ = document.querySelectorAll(".answers");
 const questionButtons$ = document.querySelectorAll(".faq-buttons");
 
-// when menu pressed show closebtn
 closeButton$.style.display = "none";
 const menuShow = () => {
   menuHidden$.classList.toggle("hidden");
@@ -31,19 +30,16 @@ const playVideo = () => {
   playButton$.style.display = "none";
   pauseButton$.style.display = "block";
 };
-// console.log(playVideo);
 
 const pauseVideo = () => {
   video$.pause();
   pauseButton$.style.display = "none";
   playButton$.style.display = "block";
 };
-// console.log(pauseVideo);
 
 playButton$.addEventListener("click", playVideo);
 pauseButton$.addEventListener("click", pauseVideo);
 
-//--
 for (let i = 0; i < questionButtons$.length; i++) {
   const answer = questionButtons$[i];
 
@@ -52,12 +48,3 @@ for (let i = 0; i < questionButtons$.length; i++) {
     child[1].classList.toggle("answers-show");
   });
 }
-
-// const showAnswers = () => {
-//   if (answers$.style.display === "none") {
-//     answers$.style.display = "block";
-//   } else {
-//     answers$.style.display = "none";
-//   }
-//   console.log("ene duudagdaj bna");
-// };
